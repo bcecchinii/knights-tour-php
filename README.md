@@ -1,48 +1,42 @@
-# Percorso del Cavallo
+# Knight's Tour
 
-Progetto scolastico sviluppato in PHP e MySQL.
+School project developed using PHP and MySQL.
 
-L'obiettivo è muovere il cavallo su una scacchiera 8x8 utilizzando le normali mosse a "L" degli scacchi, evitando di passare due volte sulla stessa posizione.
+The goal is to move the knight across an 8x8 chessboard using the standard L-shaped chess moves, while avoiding visiting the same position more than once.
 
-## Tecnologie utilizzate
+## Technologies Used
 
 - PHP
 - MySQL
 - HTML
 - CSS
-- Sessioni PHP
+- PHP Sessions
 
-## Funzionalità
+## Features
 
-- Scacchiera 8x8
-- Posizione iniziale del cavallo in [0,0]
-- Calcolo delle mosse valide
-- Memorizzazione delle posizioni già visitate
-- Impossibilità di tornare su una casella già utilizzata
-- Reset della partita
+- 8x8 chessboard
+- Initial knight position at [0,0]
+- Calculation of valid moves
+- Storage of previously visited positions
+- Prevention of revisiting already used squares
+- Game reset functionality
 
-## Configurazione
+## Setup
 
-1. Importare `database.sql` in MySQL.
-2. Copiare:
+1. Import `database.sql` into MySQL.
 
-   `config.example.php`
+2. Copy `config.example.php` and rename it to `config.php`.
 
-   e rinominarlo:
+3. Add your MySQL credentials inside `config.php`.
 
-   `config.php`
+4. Start the project using PHP:
 
-3. Inserire in `config.php` le proprie credenziali MySQL.
+   `php -S localhost:8000`
 
-4. Avviare il progetto con PHP, ad esempio:
+5. Open the following address in your browser:
 
-   ```bash
-   php -S localhost:8000
+   `http://localhost:8000`
 
-5. Aprire nel browser:
+## Notes
 
-http://localhost:8000
-
-Note
-
-Questo progetto è stato realizzato originariamente come progetto scolastico e successivamente ripristinato e corretto per renderlo nuovamente eseguibile con versioni moderne di PHP e MySQL.
+This project was originally developed as a school project and was later restored and fixed to make it compatible with modern versions of PHP and MySQL.
