@@ -1,8 +1,15 @@
 <?php
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $databasename = "ProgettoBea";
+$config = require 'config.php';
 
-    $conn = new mysqli($servername, $username, $password, $databasename);
+$servername = $config['servername'];
+$username = $config['username'];
+$password = $config['password'];
+$databasename = $config['databasename'];
+
+$conn = new mysqli(
+    $servername,
+    $username,
+    $password,
+    $databasename
+);
